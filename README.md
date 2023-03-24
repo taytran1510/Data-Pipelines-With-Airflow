@@ -19,8 +19,8 @@ Copy the data from the udacity bucket to the home cloudshell directory:
 
 Copy the data from the home cloudshell directory to your own bucket -- this is only an example:
 
-aws s3 cp ~/log-data/ s3://thuantn5-datalake/log-data/ --recursive
-aws s3 cp ~/song-data/ s3://thuantn5-datalake/song-data/ --recursive
+>**aws s3 cp ~/log-data/ s3://thuantn5-datalake/log-data/ --recursive**<br>
+>**aws s3 cp ~/song-data/ s3://thuantn5-datalake/song-data/ --recursive/**
 
 ## Configuring the DAG
 
