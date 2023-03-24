@@ -7,8 +7,20 @@ Working on a music streaming company's data infrastructure by creating anf autom
 
 For this project, there are two datasets. Here are the s3 links for each:
 
->**s3://udacity-dend/song_data/**<br>
->**s3://udacity-dend/log_data/**
+>**s3://udacity-dend/song-data/**<br>
+>**s3://udacity-dend/log-data/**
+
+## Copy S3 Data
+
+Copy the data from the udacity bucket to the home cloudshell directory:
+
+>**aws s3 cp s3://udacity-dend/log-data/ ~/log-data/ --recursive/**<br>
+>**aws s3 cp s3://udacity-dend/song-data/ ~/song-data/ --recursive/**
+
+Copy the data from the home cloudshell directory to your own bucket -- this is only an example:
+
+aws s3 cp ~/log-data/ s3://thuantn5-datalake/log-data/ --recursive
+aws s3 cp ~/song-data/ s3://thuantn5-datalake/song-data/ --recursive
 
 ## Configuring the DAG
 
